@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+.font-days-one {
+  font-family: "Days One", sans-serif;
+}
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
 :root {
   --flame: #9e0b00;
   --sand: #f2eadf;
