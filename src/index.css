@@ -1,1 +1,93 @@
 @import "tailwindcss";
+
+:root {
+  --flame: #9e0b00;
+  --sand: #f2eadf;
+
+  /* ai task force */
+
+  --saffron_red: #9a1312;
+  --blood_red: #df0d3a;
+
+  /* prosper ai */
+
+  --stone: #1a3140;
+  --stone-700: #3f6278; /* stone-75 */
+  --stone-300: #b5bbc0; /* stone-50 */
+  --stone-100: #e8e8e8; /* stone-25 */
+
+  --ice: #bce3d8;
+  --ice-500: #cfede4; /* ice-75 */
+  --ice-300: #e1f4ef; /* ice-5s0 */
+  --ice-200: #ecf8f5; /* ice-25 */
+
+  --snow: #ffffff;
+  --maroon: #cb494a;
+
+  /* masters */
+
+  --sea_green: #0e864c;
+  --forest_green: #096e3d;
+  --oranges: #e77008;
+}
+
+html,
+body {
+  margin: 0;
+  /* scrollbar-color: hsl(var(--primary)) hsl(var(--background)); */
+  text-align: left;
+  color: var(--stone);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+/* Hide the spin buttons in WebKit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+    /* @apply font-heading; */
+    margin: 0;
+    text-wrap: balance;
+  }
+  h2 {
+    @apply text-2xl;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h3 {
+    @apply text-xl;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h4 {
+    @apply text-lg;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h5 {
+    @apply text-base;
+    margin: 0;
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
