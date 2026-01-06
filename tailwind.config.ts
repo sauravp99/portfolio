@@ -56,31 +56,6 @@ module.exports = {
         xl: "1200px",
         xxl: "1600px",
       },
-      fontFamily: {
-        heading: ["Days One", "sans-serif"],
-        body: ["Quicksand", "sans-serif"],
-      },
-      // fontSize: {
-      //   normal: ["0.92rem", "1.5rem"],
-      //   xs: ["0.81rem", { lineHeight: "1.25rem", fontWeight: 400 }],
-      //   uppercase_sm: [
-      //     "0.81rem",
-      //     { lineHeight: "1rem", fontWeight: 500, letterSpacing: "0.05rem" },
-      //   ],
-      //   uppercase_md: [
-      //     "0.9rem",
-      //     { lineHeight: "1rem", fontWeight: 600, letterSpacing: "0.06rem" },
-      //   ],
-      //   sm: ["0.875rem", { lineHeight: "1.5rem", fontWeight: 400 }],
-      //   md: ["1rem", { lineHeight: "1.6rem", fontWeight: 400 }],
-      //   md_strong: ["1rem", { lineHeight: "1.6rem", fontWeight: 500 }],
-      //   lg: ["1.2rem", { lineHeight: "1.6rem", fontWeight: 400 }],
-      //   xl: ["1.5rem", { lineHeight: "2rem", fontWeight: 600 }],
-      //   lead: ["2.1rem", { lineHeight: "3rem", fontWeight: 400 }],
-      //   "2xl": ["2.6rem", { lineHeight: "3.7rem", fontWeight: 650 }],
-      //   "3xl": ["5.5rem", { lineHeight: "6.5rem", fontWeight: 700 }],
-      //   base: ["1rem", { lineHeight: "1.6rem", fontWeight: 400 }],
-      // },
       spacing: {
         xxs: "2px",
         xs: "4px",
