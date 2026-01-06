@@ -2,14 +2,14 @@ import clsx from "clsx";
 
 export const WelcomeBanner = ({ side }: { side: "right" | "left" }) => {
   return (
-    <span
+    <h3
       className={clsx(
-        `flex justify-center h-full items-center ${
+        `whitespace-nowrap font-days-one md:text-xl w-full text-xs ${
           side === "right" ? "rotate-90" : "rotate-270"
         }`
       )}
     >
-      <h3 className="whitespace-nowrap"> Welcome to my portfolio!</h3>
-    </span>
+      Welcome to my portfolio!
+    </h3>
   );
 };
