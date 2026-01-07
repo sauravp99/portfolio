@@ -83,7 +83,7 @@ export const PortraitSection = () => {
               <img
                 src={Portrait}
                 alt="portrait of saurav pandey"
-                className="max-w-[12%] h-auto z-0 rounded-4xl border border-(--sand) bg-[#cfc5b89c]"
+                className="max-w-[12%] h-auto z-0 rounded-4xl border-4 border-(--flame) bg-[#cfc5b89c]"
               />
               {/* TODO: Fix responsivness for text */}
               <p className="h-fit px-5 py-10 font-quicksand font-semibold leading-10 w-2/6 rounded-4xl text-(--flame) border-double relative">
