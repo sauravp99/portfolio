@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "../components/home/Header";
 import { WelcomeBanner } from "../components/home/WelcomeBanner";
-import { PortraitSection } from "../components/home/PortraitSection /PortraitSection";
+import { PortraitSection } from "../components/home/AboutMeSection/AboutMe";
 import prosperGif from "../assets/Text generation loop.json";
 import aiGif from "../assets/AIGif.json";
 import windmillGif from "../assets/Wind Mill.json";
 import Lottie from "lottie-react";
-import { ProjectCard } from "../components/home/ProjectCard/ProjectCard";
+import { ProjectCard } from "../components/home/ProjectSection/ProjectCard/ProjectCard";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,7 +34,7 @@ function Index() {
         <div className="flex flex-row col-span-10 justify-between w-full *:rounded-xl *:w-1/4">
           <ProjectCard
             title="Prosper AI"
-            year="2023 -> 2024"
+            year="2024 -> 2025"
             description="Automating property prospect generation with AI"
             animationDelay={20}
             gif={<Lottie animationData={prosperGif} loop={true} />}
