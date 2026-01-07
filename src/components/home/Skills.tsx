@@ -13,7 +13,7 @@ export const Skills = () => {
             <img
               src={CodingSvg}
               alt="Illustration of programmer"
-              className="max-w-[40%] h-auto bg-[#eae6e69c] rounded-lg"
+              className="max-w-[40%] h-auto bg-[#eae6e69c] shadow-xl rounded-lg"
             />
             <p className="font-days-one text-lg font-bold">Typescript</p>
           </div>
@@ -21,7 +21,7 @@ export const Skills = () => {
             <img
               src={DesignSvg}
               alt="Illustration of designer"
-              className="max-w-[40%] h-auto bg-[#eae6e69c] rounded-lg"
+              className="max-w-[40%] h-auto bg-[#eae6e69c] shadow-xl rounded-lg"
             />
             <p className="font-days-one text-lg font-bold">UX design</p>
           </div>
@@ -29,7 +29,7 @@ export const Skills = () => {
             <img
               src={AIsvg}
               alt="Illustration of AI researcher"
-              className="max-w-[35%] h-auto bg-[#eae6e69c] rounded-lg"
+              className="max-w-[35%] h-auto bg-[#eae6e69c] shadow-xl rounded-lg"
             />
             <p className="font-days-one text-lg font-bold">AI</p>
           </div>
