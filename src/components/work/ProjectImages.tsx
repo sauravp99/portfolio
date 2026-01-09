@@ -10,26 +10,25 @@ export const ProjectImages = ({
   imageR,
 }: {
   imageL: ProjectImage;
-  imageR: ProjectImage;
+  imageR?: ProjectImage;
 }) => {
   return (
     <section className="w-full px-10 flex gap-20 flex-row justify-center items-center">
       <img
         src={imageL.src}
         alt={imageL.alt}
-        className={clsx(
-          "max-w-[20%] h-auto bg-[#3f627855] p-4 rounded-2xl",
-          imageL.className
-        )}
+        className={clsx("max-w-[20%] h-auto p-4 rounded-2xl", imageL.className)}
       />
-      <img
-        src={imageR.src}
-        alt={imageR.alt}
-        className={clsx(
-          "max-w-[20%] h-auto bg-[#3f627855] p-4 rounded-2xl",
-          imageR.className
-        )}
-      />
+      {imageR && (
+        <img
+          src={imageR.src}
+          alt={imageR.alt}
+          className={clsx(
+            "max-w-[20%] h-auto bg-[#3f627855] p-4 rounded-2xl",
+            imageR.className
+          )}
+        />
+      )}
     </section>
   );
 };
