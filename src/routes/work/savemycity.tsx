@@ -32,7 +32,7 @@ function RouteComponent() {
         imageL={{
           src: Portrait,
           alt: "portrait of saurav pandey",
-          className: "max-w-[30%]",
+          className: "max-w-[31%] bg-[#3f627855]",
         }}
         imageR={{
           src: Game,
