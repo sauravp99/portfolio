@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "../components/home/Header";
 import { WelcomeBanner } from "../components/home/WelcomeBanner";
 import { PortraitSection } from "../components/home/AboutMeSection/AboutMe";
-import prosperGif from "../assets/Text generation loop.json";
-import aiGif from "../assets/AIGif.json";
-import windmillGif from "../assets/Wind Mill.json";
+import prosperGif from "../assets/prosper/textGif.json";
+import aiGif from "../assets/aitaskforce/aiGif.json";
+import windmillGif from "../assets/masters/windmillGif.json";
 import Lottie from "lottie-react";
 import { ProjectCard } from "../components/home/ProjectSection/ProjectCard/ProjectCard";
 
