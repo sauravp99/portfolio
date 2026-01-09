@@ -34,6 +34,7 @@ export const ProjectCard = ({
     }
   }, []);
 
+  animationDelay = animationDelay + 1;
   return (
     <div
       className={clsx(
