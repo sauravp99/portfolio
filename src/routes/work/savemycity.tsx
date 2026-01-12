@@ -7,6 +7,7 @@ import PencilRulerIcon from "../../icons/pencil_ruler.svg";
 import Portrait from "../../assets/masters/portrait.jpg";
 import Game from "../../assets/masters/game.jpg";
 import { ProjectImages } from "../../components/work/ProjectImages";
+import { ProjectDescription } from "../../components/work/ProjectDescription";
 
 export const Route = createFileRoute("/work/savemycity")({
   component: () => RouteComponent(),
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/work/savemycity")({
 
 function RouteComponent() {
   return (
-    <main className="bg-(--sea_green) min-h-screen text-(--sand) overflow-hidden flex flex-col gap-30">
+    <main className="bg-(--sea_green) min-h-screen text-(--sand) overflow-hidden items-center flex flex-col gap-40">
       <ProjectHeader
         projectTitle={"Save my city!"}
         clientName={"Universitet i Oslo (UiO)"}
@@ -38,6 +39,17 @@ function RouteComponent() {
           src: Game,
           alt: "Birdseye view of the game",
           className: "max-w-[54%]",
+        }}
+      />
+      <ProjectDescription
+        description={{
+          roles: [
+            {
+              title: "UX designer",
+              description:
+                "The study in my master thesis was done in the intersection of three areas of research: serious games, tangible interaction and environmental studies. The research question i was investigating was: My methodology of choice was research through design, an iterative hands-on approach for investigating design hypotheses. I worked with interaction design, circuit engineering, programming, game development and academic research ",
+            },
+          ],
         }}
       />
     </main>

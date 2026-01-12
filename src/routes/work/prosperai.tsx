@@ -41,7 +41,28 @@ const RouteComponent = () => {
           className: "max-w-[58%] bg-[#3f627855] rounded-2xl z-10",
         }}
       />
-      <ProjectDescription />
+      <ProjectDescription
+        description={{
+          reflections: [
+            "Working with a fast-paced startup and balancing business interests, client needs and user needs. Understanding pacing and reprioritizing product requirements when needed.",
+            "Best practices around building up an extensive and large monolithic react and typescript codebase. This involved understanding properly configuring third party libraries and writing robust and accessible shared UI components. ",
+            "Experience in taking responsibility for prioritizing, setting roadmaps and guiding the team in frontend development and the UX process. I have gained a lot of understanding in critical decision making and maintaining a good team dynamic.",
+            "Working with branding and visual profile. We crafted a unique brand image through facilitating workshops, conceptualizing the clients long term vision and incorporating the concept into the design",
+          ],
+          roles: [
+            {
+              title: "Frontend lead",
+              description:
+                "Initiated and configured React app with Vite (my first project using Vite). Added custom hooks with Tanstack Query for data management and API integration. Tanstack Router was chosen due to better compatibility with TQuery and similiar documentation. I tok on the role as frontend lead over time responsible for onboarding devs and prioritizing tasks in our Jira board. Initiating discussions with the tea",
+            },
+            {
+              title: "UX designer",
+              description:
+                "Lead UX insight, visual branding and redesign. Met with stakeholders and made feature-based roadmaps. Facilitated discovery and event storming workshops. Take a look at the design process further down!",
+            },
+          ],
+        }}
+      />
     </main>
   );
 };
