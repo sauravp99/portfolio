@@ -45,7 +45,7 @@ const Index = () => {
       </section>
       <div className="grid grid-cols-12 pt-50">
         <div className="col-span-1" />
-        <div className="flex flex-row col-span-10 justify-between w-full *:rounded-xl *:w-1/4">
+        <div className="flex flex-row col-span-10 justify-between pb-40 w-full *:rounded-xl *:w-1/4">
           <ProjectCard
             to="/work/prosperai"
             title="Prosper AI"
