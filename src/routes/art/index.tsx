@@ -21,22 +21,22 @@ gsap.registerPlugin(useGSAP, ScrollToPlugin);
 const RouteComponent = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const startMusic = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+  // const startMusic = () => {
+  //   if (audioRef.current) {
+  //     audioRef.current.play();
+  //   }
+  // };
 
-  const handleScroll = () => {
-    // startMusic()
-    // Scroll to the target element
-    setTimeout(() => {
-      gsap.to(window, {
-        duration: 200,
-        scrollTo: { y: "#scrollcard" },
-      });
-    }, 3000);
-  };
+  // const handleScroll = () => {
+  //   // startMusic()
+  //   // Scroll to the target element
+  //   setTimeout(() => {
+  //     gsap.to(window, {
+  //       duration: 200,
+  //       scrollTo: { y: "#scrollcard" },
+  //     });
+  //   }, 3000);
+  // };
 
   return (
     // bg-[#01352f]
