@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { StarIcon } from "lucide-react";
+import { v4 as uuidv4 } from "uuid";
 
 interface Role {
   title: string;
@@ -35,9 +36,12 @@ export const ProjectDescription = ({ description }: Props) => {
           )}
         >
           <div className="flex flex-col col-span-1 gap-8 pt-5">
-            {description?.roles.map((role, i) => {
+            {description?.roles.map((role) => {
               return (
-                <div className="flex flex-col gap-5" key={i}>
+                <div
+                  className="flex flex-col gap-5 font-quicksand leading-8"
+                  key={uuidv4()}
+                >
                   <div className="flex flex-row gap-2">
                     <StarIcon className="fill-(--ice) stroke-(--ice)" />
                     <p>{role.title}</p>
@@ -50,9 +54,9 @@ export const ProjectDescription = ({ description }: Props) => {
           {description.reflections && (
             <div className="flex flex-col gap-5 pt-5">
               <h2 className="whitespace-nowrap">Some things I learned</h2>
-              <div className="flex flex-col gap-8">
-                {description?.reflections?.map((r, i) => {
-                  return <p key={i}>{r}</p>;
+              <div className="flex flex-col gap-8 font-quicksand">
+                {description?.reflections?.map((r) => {
+                  return <p key={uuidv4()}>{r}</p>;
                 })}
               </div>
             </div>
