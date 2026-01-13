@@ -89,9 +89,9 @@ export const PortraitSection = () => {
               <p className="h-fit px-5 py-10 font-quicksand font-semibold leading-10 w-2/6 rounded-4xl text-(--flame) border-double relative">
                 I am an experienced UX designer and frontend developer who
                 bridges the gap between design and technology. With experience
-                as both a design lead and a frontend lead, I turn complex
-                digital products into solutions that are simple, user-friendly,
-                and effective.
+                as both design lead and frontend lead, I turn complex digital
+                products into solutions that are simple, user-friendly, and
+                effective.
               </p>
             </div>
             <Skills />
