@@ -1,6 +1,7 @@
 import { useEffect, type ReactNode } from "react";
 import styles from "./ProjectCard.module.css";
 import clsx from "clsx";
+import { Link, type LinkProps } from "@tanstack/react-router";
 
 interface Props {
   title: string;
@@ -8,6 +9,7 @@ interface Props {
   description: string;
   gif: ReactNode;
   animationDelay: number;
+  to: LinkProps["to"];
 }
 
 export const ProjectCard = ({
@@ -16,6 +18,7 @@ export const ProjectCard = ({
   description,
   gif,
   animationDelay,
+  to,
 }: Props) => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -36,7 +39,8 @@ export const ProjectCard = ({
 
   animationDelay = animationDelay + 1;
   return (
-    <div
+    <Link
+      to={to}
       className={clsx(
         "flex justify-center flex-col border-2 border-(--saffron_red) hover:border-(--sand) relative shadow-2xl backdrop-brightness-90 hiddenSection",
         styles.hidden
@@ -50,6 +54,6 @@ export const ProjectCard = ({
       <p className="font-quicksand text-[16px] p-5 pt-0 leading-8 font-semibold">
         {description}
       </p>
-    </div>
+    </Link>
   );
 };
