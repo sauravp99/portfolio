@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef } from "react";
 import gridMusic from "../../assets/grid.mp3";
 import { gsap } from "gsap";
@@ -11,6 +11,7 @@ import signals from "../../assets/art/Signals.png";
 import wisdom from "../../assets/art/Wisdom.png";
 
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ArrowLeftIcon } from "lucide-react";
 
 export const Route = createFileRoute("/art/")({
   component: () => RouteComponent(),
@@ -28,7 +29,7 @@ const RouteComponent = () => {
   // };
 
   // const handleScroll = () => {
-  //   // startMusic()
+  //   startMusic();
   //   // Scroll to the target element
   //   setTimeout(() => {
   //     gsap.to(window, {
@@ -41,6 +42,14 @@ const RouteComponent = () => {
   return (
     // bg-[#01352f]
     <main className="bg-black transition-all delay-1000 min-h-screen text-(--sand) overflow-hidden items-center flex flex-col gap-40">
+      <div className="w-full absolute top-10 left-10 flex">
+        <Link
+          to={"/"}
+          className="w-fit flex flex-row border gap-2 px-5 py-2 rounded-xl text-[16px]"
+        >
+          <ArrowLeftIcon /> <p>Back</p>
+        </Link>
+      </div>
       <div className="flex flex-col gap-20 justify-end h-full mt-96 items-center">
         <h2 className="font-days-one text-4xl">Welcome</h2>
         <p className="font-quicksand text-2xl">

@@ -4,6 +4,7 @@ import { routeTree } from "./routeTree.gen";
 const router = createRouter({
   routeTree,
   defaultViewTransition: true,
+  scrollRestoration: true,
 });
 
 function App() {

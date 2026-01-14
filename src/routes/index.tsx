@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "../components/home/Header";
 import { WelcomeBanner } from "../components/home/WelcomeBanner";
 import { PortraitSection } from "../components/home/AboutMeSection/AboutMe";
@@ -9,6 +9,7 @@ import constructionGif from "../assets/construction.json";
 import Lottie from "lottie-react";
 import { ProjectCard } from "../components/home/ProjectSection/ProjectCard/ProjectCard";
 import { useMediaQuery } from "usehooks-ts";
+import { ArrowRightSquare } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: () => Index(),
@@ -74,6 +75,14 @@ const Index = () => {
         </div>
         <div className="col-span-1" />
       </div>
+      <Link
+        to="/art"
+        className="w-full items-center whitespace-nowrap gap-4 border justify-center flex hover:bg-red-950 transition-colors duration-150 p-20 h-fit font-quicksand text-2xl"
+      >
+        {" "}
+        View my artwork
+        <ArrowRightSquare />
+      </Link>
     </main>
   );
 };
