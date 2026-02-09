@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work/index'
 import { Route as ArtIndexRouteImport } from './routes/art/index'
+import { Route as WorkUdiRouteImport } from './routes/work/udi'
 import { Route as WorkSavemycityRouteImport } from './routes/work/savemycity'
 import { Route as WorkProsperaiRouteImport } from './routes/work/prosperai'
 import { Route as WorkAitaskforceRouteImport } from './routes/work/aitaskforce'
@@ -29,6 +30,11 @@ const WorkIndexRoute = WorkIndexRouteImport.update({
 const ArtIndexRoute = ArtIndexRouteImport.update({
   id: '/art/',
   path: '/art/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkUdiRoute = WorkUdiRouteImport.update({
+  id: '/work/udi',
+  path: '/work/udi',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WorkSavemycityRoute = WorkSavemycityRouteImport.update({
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/work/aitaskforce': typeof WorkAitaskforceRoute
   '/work/prosperai': typeof WorkProsperaiRoute
   '/work/savemycity': typeof WorkSavemycityRoute
+  '/work/udi': typeof WorkUdiRoute
   '/art': typeof ArtIndexRoute
   '/work': typeof WorkIndexRoute
 }
@@ -60,6 +67,7 @@ export interface FileRoutesByTo {
   '/work/aitaskforce': typeof WorkAitaskforceRoute
   '/work/prosperai': typeof WorkProsperaiRoute
   '/work/savemycity': typeof WorkSavemycityRoute
+  '/work/udi': typeof WorkUdiRoute
   '/art': typeof ArtIndexRoute
   '/work': typeof WorkIndexRoute
 }
@@ -69,6 +77,7 @@ export interface FileRoutesById {
   '/work/aitaskforce': typeof WorkAitaskforceRoute
   '/work/prosperai': typeof WorkProsperaiRoute
   '/work/savemycity': typeof WorkSavemycityRoute
+  '/work/udi': typeof WorkUdiRoute
   '/art/': typeof ArtIndexRoute
   '/work/': typeof WorkIndexRoute
 }
@@ -79,6 +88,7 @@ export interface FileRouteTypes {
     | '/work/aitaskforce'
     | '/work/prosperai'
     | '/work/savemycity'
+    | '/work/udi'
     | '/art'
     | '/work'
   fileRoutesByTo: FileRoutesByTo
@@ -87,6 +97,7 @@ export interface FileRouteTypes {
     | '/work/aitaskforce'
     | '/work/prosperai'
     | '/work/savemycity'
+    | '/work/udi'
     | '/art'
     | '/work'
   id:
@@ -95,6 +106,7 @@ export interface FileRouteTypes {
     | '/work/aitaskforce'
     | '/work/prosperai'
     | '/work/savemycity'
+    | '/work/udi'
     | '/art/'
     | '/work/'
   fileRoutesById: FileRoutesById
@@ -104,6 +116,7 @@ export interface RootRouteChildren {
   WorkAitaskforceRoute: typeof WorkAitaskforceRoute
   WorkProsperaiRoute: typeof WorkProsperaiRoute
   WorkSavemycityRoute: typeof WorkSavemycityRoute
+  WorkUdiRoute: typeof WorkUdiRoute
   ArtIndexRoute: typeof ArtIndexRoute
   WorkIndexRoute: typeof WorkIndexRoute
 }
@@ -129,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/art'
       fullPath: '/art'
       preLoaderRoute: typeof ArtIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/udi': {
+      id: '/work/udi'
+      path: '/work/udi'
+      fullPath: '/work/udi'
+      preLoaderRoute: typeof WorkUdiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/work/savemycity': {
@@ -160,6 +180,7 @@ const rootRouteChildren: RootRouteChildren = {
   WorkAitaskforceRoute: WorkAitaskforceRoute,
   WorkProsperaiRoute: WorkProsperaiRoute,
   WorkSavemycityRoute: WorkSavemycityRoute,
+  WorkUdiRoute: WorkUdiRoute,
   ArtIndexRoute: ArtIndexRoute,
   WorkIndexRoute: WorkIndexRoute,
 }
