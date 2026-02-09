@@ -5,6 +5,7 @@ import { ProjectImages } from "../../components/work/ProjectImages";
 import DesktopView from "../../assets/prosper/desktop.png";
 import MobileView from "../../assets/prosper/mobile.png";
 import { ProjectDescription } from "../../components/work/ProjectDescription";
+import { FigmaEmbed } from "../../components/shared/FigmaEmbed";
 
 export const Route = createFileRoute("/work/prosperai")({
   component: () => RouteComponent(),
@@ -58,6 +59,11 @@ const RouteComponent = () => {
             },
           ],
         }}
+      />
+      <FigmaEmbed
+        url={
+          "https://embed.figma.com/proto/5ueS3JrWRIViPlDblJrdd9/Portfolio?page-id=0%3A1&node-id=1070-1486"
+        }
       />
     </main>
   );

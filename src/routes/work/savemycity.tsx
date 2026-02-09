@@ -5,6 +5,7 @@ import Portrait from "../../assets/masters/portrait.jpg";
 import Game from "../../assets/masters/game.jpg";
 import { ProjectImages } from "../../components/work/ProjectImages";
 import { ProjectDescription } from "../../components/work/ProjectDescription";
+import { FigmaEmbed } from "../../components/shared/FigmaEmbed";
 
 export const Route = createFileRoute("/work/savemycity")({
   component: () => RouteComponent(),
@@ -47,6 +48,11 @@ function RouteComponent() {
             },
           ],
         }}
+      />
+      <FigmaEmbed
+        url={
+          "https://embed.figma.com/proto/5ueS3JrWRIViPlDblJrdd9/Portfolio?page-id=0%3A1&node-id=1035-793"
+        }
       />
     </main>
   );
