@@ -8,6 +8,10 @@ import GraduateIcon from "../icons/graduate.svg?react";
 import DocumentIcon from "../icons/document.svg?react";
 import ControllerIcon from "../icons/controller.svg?react";
 import PencilWriteIcon from "../icons/pencil_write.svg?react";
+import MicrophoneIcon from "../icons/microphone.svg?react";
+import SpeechBubbleIcon from "../icons/speech_bubble.svg?react";
+import TextIcon from "../icons/text.svg?react";
+import FigmaIcon from "../icons/figma_logo.svg?react";
 
 export {
   CodeIcon,
@@ -20,4 +24,8 @@ export {
   DocumentIcon,
   ControllerIcon,
   PencilWriteIcon,
+  MicrophoneIcon,
+  SpeechBubbleIcon,
+  TextIcon,
+  FigmaIcon,
 };

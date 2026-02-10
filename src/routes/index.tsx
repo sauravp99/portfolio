@@ -50,22 +50,33 @@ const Index = () => {
           <ProjectCard
             to="/work/prosperai"
             title="Prosper AI"
+            client="prosper"
             year="2024 -> 2025"
             description="Automating property prospect generation with AI"
             animationDelay={20}
             gif={<Lottie animationData={prosperGif} loop={true} />}
           />
-          <ProjectCard
+          {/* <ProjectCard
             to="/work/aitaskforce"
             title="AI task force"
             year="2023 -> 2024"
             animationDelay={30}
             description="A research and discovery driven team focused on exploring the capabilites of AI"
             gif={<Lottie animationData={aiGif} loop={true} />}
+          /> */}
+          <ProjectCard
+            to="/work/udi"
+            title="Tale Til Tekst"
+            client="UDI"
+            year="2025 -> "
+            animationDelay={10}
+            description="Evaluating whether UDI can conduct better, more efficient asylum interviews by using a AI powered speech-to-text transcription tool"
+            gif={<Lottie animationData={aiGif} loop={true} />}
           />
           <ProjectCard
             to="/work/savemycity"
             title="Save my city!"
+            client="UiO"
             year="2022 -> 2023"
             animationDelay={40}
             description="An interactive serious game for engaging adolescents on
