@@ -31,7 +31,7 @@ const Index = () => {
   return (
     <main className="bg-(--saffron_red) min-h-screen text-(--sand) overflow-hidden">
       <section className="grid grid-cols-12 min-h-20 w-full">
-        <section className="col-span-1 lg:pt-130 pt-60 md:pt-100 border-r-2">
+        <section className="col-span-1 lg:pt-200 pt-60 md:pt-100 border-r-2">
           <WelcomeBanner side="left" />
         </section>
         <section className="col-span-10 flex flex-col items-center ">
