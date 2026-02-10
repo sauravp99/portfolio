@@ -43,9 +43,10 @@ function RouteComponent() {
           roles: [
             {
               title: "UX designer",
-              description: `
-              The study in my master thesis was done in the intersection of three areas of research: serious games, tangible interaction and environmental studies. The research question i was investigating was: 
-              My methodology of choice was research through design, an iterative hands-on approach for investigating design hypotheses. I worked with interaction design, circuit engineering, programming, game development and academic research 
+              description: `The study in my master thesis was done in the intersection of three areas of research: serious games, tangible interaction and environmental studies. The research question i was investigating was: 
+              “How can cooperative and interactive serious games be designed for fostering environmental engagement in adolescents?”
+My methodology of choice was research through design, an iterative hands-on approach for investigating design hypotheses. I worked with interaction design, circuit engineering, programming, game development and academic research.
+After a lot of hard work, i achieved the final grade: A
               `,
             },
           ],
