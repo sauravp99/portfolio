@@ -46,7 +46,7 @@ export const ProjectDescription = ({ description }: Props) => {
                     <StarIcon className="fill-(--ice) stroke-(--ice)" />
                     <p>{role.title}</p>
                   </div>
-                  <p>{role.description}</p>
+                  <p className="whitespace-pre-wrap">{role.description}</p>
                 </div>
               );
             })}

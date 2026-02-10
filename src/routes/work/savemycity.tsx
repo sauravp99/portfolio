@@ -35,7 +35,7 @@ function RouteComponent() {
         imageR={{
           src: Game,
           alt: "Birdseye view of the game",
-          className: "max-w-[54%]",
+          className: "max-w-[54%] bg-[#3f627855]",
         }}
       />
       <ProjectDescription
@@ -43,8 +43,10 @@ function RouteComponent() {
           roles: [
             {
               title: "UX designer",
-              description:
-                "The study in my master thesis was done in the intersection of three areas of research: serious games, tangible interaction and environmental studies. The research question i was investigating was: My methodology of choice was research through design, an iterative hands-on approach for investigating design hypotheses. I worked with interaction design, circuit engineering, programming, game development and academic research ",
+              description: `
+              The study in my master thesis was done in the intersection of three areas of research: serious games, tangible interaction and environmental studies. The research question i was investigating was: 
+              My methodology of choice was research through design, an iterative hands-on approach for investigating design hypotheses. I worked with interaction design, circuit engineering, programming, game development and academic research 
+              `,
             },
           ],
         }}
@@ -53,6 +55,7 @@ function RouteComponent() {
         url={
           "https://embed.figma.com/proto/5ueS3JrWRIViPlDblJrdd9/Portfolio?page-id=0%3A1&node-id=1035-793"
         }
+        className="bg-[#0d5705]"
       />
     </main>
   );

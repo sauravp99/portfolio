@@ -64,6 +64,7 @@ const RouteComponent = () => {
         url={
           "https://embed.figma.com/proto/5ueS3JrWRIViPlDblJrdd9/Portfolio?page-id=0%3A1&node-id=1070-1486"
         }
+        className="bg-[#001527]"
       />
     </main>
   );

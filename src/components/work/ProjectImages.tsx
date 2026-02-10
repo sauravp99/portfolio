@@ -24,7 +24,7 @@ export const ProjectImages = ({
           src={imageR.src}
           alt={imageR.alt}
           className={clsx(
-            "max-w-[20%] h-auto bg-[#3f627855] p-4 rounded-2xl",
+            "max-w-[20%] h-auto p-4 rounded-2xl",
             imageR.className
           )}
         />
